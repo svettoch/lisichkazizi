@@ -1,13 +1,4 @@
-<!DOCTYPE html>
-<html lang="ru">
-    <html>
-        <head>
-            <link href="css/style.css" rel="stylesheet">
-            <meta charset="UTF-8">
-            <title>Формы</title>
-            <meta name="description" content = "Описание страницы">
-            <meta name = "keywords" content = "Никому не нужные ключевые слова">
-        </head>
+<? include "header.php"?>
 <body>
     <h1>Оглавление</h1>
     <nav>
@@ -182,4 +173,4 @@
 
 
 </body>
-</html>
+<? include "footer.php"?>

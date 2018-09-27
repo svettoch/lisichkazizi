@@ -1,41 +1,207 @@
-body
-{
-    color:black;
-    
-}
-/*# селектор id*/
-/*Селекторы классов*/
-/*Селекторы тегов*/
-/*Дочерние селевторы*/
-body > p
-{
-background: plum;
-font-size: 25px;
-}
-/*Для потомков применяется ко всем потомкам*/
-ul li
-{
-    color:black;
-}
-/*Потомки*/
-p.green a {color:red;}
-/*<p class = "green"><a href = "#"></a>*/
-p .green a{}
-/*<p><b class = "green"><a href = "#"></a></b></p>**/
-.green a {}
-/*
-<h1 class  = "green">
-<a href>
-</h1>*/
 
-/*Селекторы атрибутов*/
-input [type = "text"]
+.go 
 {
-    
+height: 43px;
+background-color: #3E2C2C;
+
+clear:both;
 }
-a [href] [title]
+.go>ul
 {
-    
-    
+	height: 40px;
 }
-/*inherit - принудительное наследование от родителей к потомкам, если по умолчанию не наследуется. Не наследуют блочные элементы*/
+.go>ul>li {
+    float: left;
+    border-right: 1px solid #444;
+    position: relative;
+    list-style-type: none;
+}
+.go>ul>li>a {
+    font-weight: bold;
+    line-height: 14px;
+    color: white;
+    text-shadow: 0 1px 0 rgba(0,0,0,0.25);
+    display: block;
+    padding: 13px 28px;
+    border-right: 1px solid #333;
+    text-decoration: none;
+}
+.go>ul>li:first-child>a {
+    padding-left: 30px;
+}
+
+.go>ul>li>a:active {
+    background-color: #333;
+    color: #76e16e;
+}
+.go>ul>li>a:hover{    
+	background-color: #333;
+    color: #76e16e;}
+.go>ul>li>ul {
+    background-color: #333;
+    border-radius: 0 0 3px 3px;
+    -webkit-border-radius: 0 0 3px 3px;
+    -moz-border-radius: 0 0 3px 3px;
+    overflow: hidden;
+    position: absolute;
+    top: 40px;
+    width: 200px;
+    padding-left: 10px;
+    display: none;
+}
+.go>ul>li>ul>li {
+    list-style-type: none;
+}
+.go>ul>li>ul>li>a {
+    font-size: 12px;
+    display: block;
+    line-height: 12px;
+    color: #eee;
+    padding: 10px 28px;
+    border-top: 1px solid #444;
+    text-decoration: none;
+}
+.go>ul>li>ul>li>a:hover{
+    background-color: #222;
+}
+.go>ul>li:hover>ul
+{display: block;}
+
+.modal
+{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.8);
+    z-index: 99999;
+    display: none;
+}
+.modal:target {
+    display: block;
+    pointer-events: auto;
+}
+.close {
+	background: #606061;
+	color: #FFFFFF;
+	line-height: 25px;
+	margin-left: 330px;
+	width: 24px;
+	border-radius: 12px;
+	box-shadow: 1px 1px 3px #000;
+}
+
+.close:hover { background: #00d9ff; }
+
+
+
+.authorization {
+  width: 337px;
+  margin: 200px auto;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.authorization .head {
+  text-align: center;
+  background-color: #03a9f4;
+  height: 56px;
+  -webkit-border-radius: 9px 9px 0 0;
+  -moz-border-radius: 9px 9px 0 0;
+  border-radius: 9px 9px 0 0;
+}
+
+.authorization .head img {
+  padding-top: 15px;
+}
+
+.authorization .head p {
+  display: inline-block;
+  position: relative;
+  top: -5px;
+  font: 24px/20px "Roboto Medium", sans-serif;
+  color: #fff;
+}
+
+.authorization .main {
+  position: relative;
+  background-color: #fafafa;
+  padding: 31px;
+}
+
+.authorization .main input[type="email"],
+.authorization .main input[type="password"] {
+  width: 240px;
+  padding: 9px 4px;
+  padding-right: 40px;
+  margin-bottom: 20px;
+  color: #bdbdbd;
+  outline: none;
+  font: 16px/20px "Roboto Medium", sans-serif;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  border: 2px solid #bdbdbd;
+}
+
+.authorization .main .email-icon {
+  position: absolute;
+  top: 35px;
+  right: 23px;
+}
+
+.authorization .main .lock-icon {
+  position: absolute;
+  top: 95px;
+  right: 23px;
+}
+
+.authorization .main button {
+  display: block;
+  background-color: #f44336;
+  width: 286px;
+  margin-bottom: 5px;
+  outline: none;
+  border: none;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  color: #fff;
+  padding-top: 12px;
+  padding-bottom: 13px;
+  font: 16px/20px "Roboto Black", sans-serif;
+}
+
+.authorization .footer {
+  text-align: center;
+  background-color: #eeeeee;
+  -webkit-border-radius: 0 0 9px 9px;
+  -moz-border-radius: 0 0 9px 9px;
+  border-radius: 0 0 9px 9px;
+}
+
+.authorization .footer p {
+  display: inline-block;
+}
+
+.authorization .footer p:hover {
+  text-decoration: underline;
+}
+
+.authorization .footer .reg {
+  padding-right: 4px;
+  font: 14px/20px "Roboto Medium", sans-serif;
+  color: #212121;
+}
+
+.authorization .footer .pass {
+  padding-left: 3px;
+  font: 14px/20px "Robot Light", sans-serif;
+  color: #757575;
+}
+
+.authorization .footer a {
+  text-decoration: none;
+}

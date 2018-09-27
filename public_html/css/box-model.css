@@ -1,0 +1,87 @@
+
+.block
+ {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    margin-top:40px;
+    margin-bottom:40px;
+    margin-left:40px;
+    margin-right:40px;
+    
+    margin: 10px; 
+    
+}
+
+
+.block1
+ {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    margin-top:40px;
+    margin-bottom:40px;
+    margin-left:40px;
+    margin-right:40px;
+    
+    border: 2px solid blue;
+    border-radius: 5px;
+    text-align: center;
+    
+}
+
+.block2
+ {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    margin-top:40px;
+    margin-bottom:40px;
+    margin-left:40px;
+    margin-right:40px;
+    
+    border: 2px solid blue;
+    border-radius: 5px;
+    text-align: center;
+    
+    padding: 50px 20px;
+    
+    box-sizing: border-box;
+    
+}
+li 
+{
+    display:inline-block;
+    padding: 5px;
+}
+/*Позиционирование. По умолчанию позишн статик*/
+.position_fixed
+{
+position: fixed;
+top: 10px;
+left:10px;
+border: 2px solid blue;
+}
+.position_ralative
+{
+position: relative;
+top: 120px;
+left: 120px;
+border: 2px solid blue;
+}
+.position_absolute /*Абсолютно относительно онка браузера, либо относительтно родительского блока со значением relative*/
+{
+position: absolute;
+top: 120px;
+left: 120px;
+border: 2px solid blue;
+}
+/*Плавающие элементы*/
+.float
+{width:200px;
+    float: left;/*когда флоат*/
+}
+p
+{
+    clear:both;
+}

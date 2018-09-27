@@ -1,12 +1,4 @@
-<!DOCTYPE html>
-<html lang="ru">
-    <html>
-        <head>
-            <meta charset="UTF-8">
-            <title>Главная</title>
-            <meta name="description" content = "Описание страницы">
-            <meta name = "keywords" content = "Никому не нужные ключевые слова">
-        </head>   
+<? include "header.php"?>
     <body>
         <header id = "header">
         <a href = "#footer">footer</a>    
@@ -73,7 +65,7 @@
     
     <footer id = "footer">
         <p>начало футера</p>
-        
+<? include "footer.php"?>     
         <p>конец футера</p>
         <a href = "#header">Header</a>
     </footer>

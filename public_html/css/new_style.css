@@ -1,0 +1,109 @@
+        .authorization {
+  width: 337px;
+  margin: 200px auto;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.authorization .head {
+  text-align: center;
+  background-color: #03a9f4;
+  height: 56px;
+  -webkit-border-radius: 9px 9px 0 0;
+  -moz-border-radius: 9px 9px 0 0;
+  border-radius: 9px 9px 0 0;
+}
+
+.authorization .head img {
+  padding-top: 15px;
+}
+
+.authorization .head p {
+  display: inline-block;
+  position: relative;
+  top: -5px;
+  font: 24px/20px "Roboto Medium", sans-serif;
+  color: #fff;
+}
+
+.authorization .main {
+  position: relative;
+  background-color: #fafafa;
+  padding: 31px;
+}
+
+.authorization .main input[type="email"],
+.authorization .main input[type="password"] {
+  width: 240px;
+  padding: 9px 4px;
+  padding-right: 40px;
+  margin-bottom: 20px;
+  color: #bdbdbd;
+  outline: none;
+  font: 16px/20px "Roboto Medium", sans-serif;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  border: 2px solid #bdbdbd;
+}
+
+.authorization .main .email-icon {
+  position: absolute;
+  top: 35px;
+  right: 23px;
+}
+
+.authorization .main .lock-icon {
+  position: absolute;
+  top: 95px;
+  right: 23px;
+}
+
+.authorization .main button {
+  display: block;
+  background-color: #f44336;
+  width: 286px;
+  margin-bottom: 5px;
+  outline: none;
+  border: none;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  color: #fff;
+  padding-top: 12px;
+  padding-bottom: 13px;
+  font: 16px/20px "Roboto Black", sans-serif;
+}
+
+.authorization .footer {
+  text-align: center;
+  background-color: #eeeeee;
+  -webkit-border-radius: 0 0 9px 9px;
+  -moz-border-radius: 0 0 9px 9px;
+  border-radius: 0 0 9px 9px;
+}
+
+.authorization .footer p {
+  display: inline-block;
+}
+
+.authorization .footer p:hover {
+  text-decoration: underline;
+}
+
+.authorization .footer .reg {
+  padding-right: 4px;
+  font: 14px/20px "Roboto Medium", sans-serif;
+  color: #212121;
+}
+
+.authorization .footer .pass {
+  padding-left: 3px;
+  font: 14px/20px "Robot Light", sans-serif;
+  color: #757575;
+}
+
+.authorization .footer a {
+  text-decoration: none;
+}

@@ -1,8 +1,9 @@
-
-<? include "header.php"?>
-  <body>
-    <div class="authorization">
+<!DOCTYPE html>
+<footer>
+	<div id = "openModal" class="modal">
+	<div class="authorization">
       <form action="" method="post">
+      <a href="#close" title="Закрыть" class="close">X</a>
         <div class="head">
           <img src="image/key-icon.png" alt="">
           <p>Авторизация</p>
@@ -24,6 +25,5 @@
         </div>
       </form>
     </div>
-  </body>
-  <? include "footer.php"?>
-
+	</div>
+</footer>
